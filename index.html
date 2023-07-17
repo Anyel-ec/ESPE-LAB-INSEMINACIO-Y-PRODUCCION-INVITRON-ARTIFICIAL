@@ -64,17 +64,16 @@
               <li><a href="transferencia.html" id="d5">Transferencia de Embriones</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Precios</a></li>
+          <li><a href="portfolio.html" id="portfolio-link"><span id="portfolio-text">Portfolio</span></a></li>
+          <li><a href="pricing.html" id="pricing-link"><span id="pricing-text">Precios</span></a></li>
           <!-- <li><a href="blog.html">Articulos</a></li> -->
-          <li><a href="contact.html">Contacto</a></li>
-          <li class="dropdown"><a href="#"><span>Acerca de</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a href="contact.html" id="contact-link"><span id="contact-text">Contacto</span></a></li>
+          <li class="dropdown"><a href="#"><span id="about-span">Acerca de</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="about.html">Nosotros</a></li>
-              <li><a href="team.html">Equipo</a></li>
-              <li><a href="testimonials.html">Testimonios</a></li>
-                </ul>
-                
+              <li><a href="about.html" id="about-link">Nosotros</a></li>
+              <li><a href="team.html" id="team-link">Equipo</a></li>
+              <li><a href="testimonials.html" id="testimonials-link">Testimonios</a></li>
+            </ul>
           </li>
           <li>
             <div class="dropdown">
@@ -82,49 +81,14 @@
                 <i id="flagIcon" class="flag-icon flag-icon-es"></i>
               </button>
               <ul class="dropdown-menu w-auto" aria-labelledby="dropdownButton">
-                <li><a class="dropdown-item w-auto" href="#" onclick="cambiarIdioma('espanol')"><i class="flag-icon flag-icon-es"></i>Español</a></li>
-                <li><a class="dropdown-item w-auto" href="#" onclick="cambiarIdioma('ingles')"><i class="flag-icon flag-icon-gb"></i>Inglés</a></li>
+                <li><a class="dropdown-item w-auto" href="#" onclick="cambiarIdioma('espanol')"><span class="flag-icon flag-icon-es"> </span> Español</a></li>
+                <li><a class="dropdown-item w-auto" href="#" onclick="cambiarIdioma('ingles')"><span class="flag-icon flag-icon-gb"> </span> &nbsp; Ingles</a></li>
               </ul>
             </div>
 
 
 
-            <style>
-              #idioma {
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                background-color: transparent;
-                border: none;
-                font-size: 16px;
-                padding: 8px;
-                border-radius: 4px;
-                color: #333;
-                font-family: Arial, sans-serif;
-                position: relative;
-                cursor: pointer;
-              }
-            
-              #idioma:focus {
-                outline: none;
-              }
-            
-              #idioma option {
-                padding: 8px;
-              }
-            
-              /* Estilos para los iconos de los idiomas */
-              .icon-espana::before {
-                content: "\1F1EA"; /* Código unicode para la bandera de España */
-                margin-right: 4px;
-              }
-            
-              .icon-inglaterra::before {
-                content: "\1F1EC"; /* Código unicode para la bandera de Reino Unido */
-                margin-right: 4px;
-              }
            
-              </style>
           
           </li>
           
@@ -194,9 +158,12 @@
 <div id="container">
   <section id="hero" class="d-flex align-items-center dark-mode">
     <div class="container" id="conta">
-      <h1 class="h1-insi" id="titulo">Inseminación Artificial <span> & </span>Producción In Vitro</h1>
-      <h2 class="h2-mejo" id="subtitulo">Mejoramiento genético de ganado bovino de los pequeños productores.</h2>
-      <a href="#main" class="btn-get-started scrollto" id="comenzar">Comenzar</a>
+      <center>
+        <h1 class="h1-insi" id="titulo" style="margin-top: 50px; color: white;  font-size: 35px;"> <span style="color: #1bbd36; font-size: 35px;"> Universidad de las Fuerzas Armadas <br> ESPE sede Santo Domingo <br></span> Laboratorio de Biotecnología de la Reproducción Animal</h1> <br><br><br> <br> <br><br><br>
+        <h2 class="h2-mejo" id="subtitulo" style="margin-top: 230px; color: white;">Mejoramiento genético de ganado bovino de los pequeños productores.</h2>
+
+      </center>
+      <!-- <a href="#main" class="btn-get-started scrollto" id="comenzar">Comenzar</a> -->
     </div>
   </section><!-- End Hero -->
 </div>
@@ -223,9 +190,7 @@
         </div>
         <div class="col-lg-8 d-flex align-items-stretch" id="mision">
           <div class="icon-boxes d-flex flex-column justify-content-center">
-            <div class="row "  style=":hover{
-              box-shadow: 0 0 10px rgba(218, 10, 10, 0.5);
-          }" ">
+            <div class="row "  >
               <div class="col-xl-4 d-flex align-items-stretch"  >
                 <div class="icon-box mt-4 mt-xl-0" id="mision3">
                   <i class="bx bx-receipt"></i>
@@ -261,12 +226,13 @@
     <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title2">
-          <h2>Servicios</h2>
-          <p> <strong>TECNOLOGÍAS PARA EL MEJORAMIENTO GENÉTICO</strong></p>
+        <div class="section-title2" id="servicios">
+          <h2 id="servicios-titulo">Servicios</h2>
+          <p id="servicios-descripcion"><strong>TECNOLOGÍAS PARA EL MEJORAMIENTO GENÉTICO</strong></p>
         </div>
+        
 
-        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="10">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -282,11 +248,11 @@
                 
                
                 <div class="col-lg-6  content">
-                  <h3>Inseminación Artifical</h3>
-                  <div class="price">
+                  <h3 id="inseminacion-titulo">Inseminación Artifical</h3>
+                  <!-- <div class="price">
                     <p><span></span></p>
-                  </div>
-                  <p class="">
+                  </div> -->
+                  <p class="" id="inseminacion-descripcion">
                     La IA es un proceso asistido de reproducción con el fin de mejorar 
                     genéticamente una especie, en el caso de los bovinos esta mejora se refleja 
                     en una mayor productividad.
@@ -309,11 +275,11 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <video src="assets/video/aspi.mp4" class="img-fluid" autoplay controls></video>
+                  <video src="assets/video/invitro.mp4" class="img-fluid" controls></video>
                 </div>
                 
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Producción in vitro de embriones</h3>
+                <div class="col-lg-6 pt-4 pt-lg-0 content ">
+                  <h3>Producción <strong class="fst-italic">in vitro</strong> de embriones</h3>
                   <div class="price">
                     <p><span></span></p>
                   </div>
@@ -340,26 +306,33 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/servicios/TE.jpg" class="img-fluid" alt="">
+                  <video src="assets/video/transferencia .mp4" class="img-fluid" controls></video>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Transferencia de embriones (TE)</h3>
                   <div class="price">
-                    <p><span>$299</span></p>
+                    <!-- <p><span>$299</span></p> -->
                   </div>
-                  <p class="fst-italic">
-                    La transferencia de embriones (TE) es una valiosa herramienta de selección genética, 
-                    el cual consiste en recolectar embriones de una hembra donante y transferidos a una hembra receptora que gesta y pare a los productos.
+                  <p class="">
+                    La TE es una valiosa herramienta que permite alcanzar el progreso genético. <br>
+                    La TE se realiza a hembras receptoras que previamente han sido evaluadas sanitaria, 
+                    nutricionalmente y presentan buenas características maternas, que contribuirán en la implantación 
+                    del embrión en su crecimiento y desarrollo.
+ 
+                     
+
+                    
                   </p>
-                  <ul>
+                  <!-- <ul>
                     <li><i class="bi bi-check-circled"></i> Aumento de la tasa de reproducción.</li>
                     <li><i class="bi bi-check-circled"></i> Selección de embriones de alta calidad para mejora la calidad del ganado. </li>
                     <li><i class="bi bi-check-circled"></i> Preservación de la genética.</li>
-                  </ul>
-                  <p>
+                  </ul> -->
+                  <!-- <p>
                     Este proceso requiere el uso de gonadotrofinas para inducir superovulación en la donadora y
                     sincronizar el ciclo estral de estas con el de las receptoras para que manifiesten celo al mismo tiempo
-                  </p>
+                  </p> -->
+
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -378,145 +351,176 @@
 
 
 
-     <!-- ======= Doctors Section ======= -->
-     <section id="doctors" class="doctors">
-      <div class="container">
+   <!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors">
+  <div class="container">
 
-        <div class="section-title">
-          <h2>Nuestro Equipo</h2>
-          <p>"El mejor trabajo en equipo viene de quienes trabajan independientemente hacia una meta al unísono." <br> ~ James Cash Penny
-          </p>
-        </div>
+    <div class="section-title" id="equipo">
+      <h2 id="equipo-titulo">Nuestro Equipo</h2>
+      <p id="equipo-cita">"El mejor trabajo en equipo viene de quienes trabajan independientemente hacia una meta al unísono." </p>
+        <br> ~ James Cash Penny
+    </div>
+    
 
-        <div class="row">
+    <div class="row">
 
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/fr.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Dr. Fredy Carrera Ph.D. </h4>
-                <span>Director del proyecto </span>
-                <p>Dr. Fredy Carrera, Ph.D. Profesor de Biotecnología animal en la Universidad de las Fuerzas Armadas ESPE.</p>
-                <div class="social">
-                  <a target="_blank" href="mailto:fpcarrera@espe.edu.ec"><i class="ri-google-fill"></i></a>
-                  <a target="_blank" href="https://twitter.com/fredypatricioc1?lang=es"><i class="ri-twitter-fill"></i></a>
-                  <a target="_blank" href="https://www.facebook.com/fredy.carreragarces"><i class="ri-facebook-fill"></i></a>
-                  <a target="_blank" href="https://ec.linkedin.com/in/fredy-carrera-garc%C3%A9s-46096242"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/team/fr.png" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4 id="equipo-titulo">Dr. Fredy Carrera Ph.D.</h4>
+            <span id="equipo-subtitulo">Director del proyecto</span>
+            <p id="equipo-descripcion">Profesor de Biotecnología Animal en la Universidad de las Fuerzas Armadas ESPE Sede Santo Domingo.</p>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/GG.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Dr. Gelacio Gómez, Mgs.</h4>
-                <span>Docente colaborador
-                </span>
-                <p>Dr. Gelacio Gómez, Mgs. Profesor de Sanidad animal en la Universidad de las Fuerzas Armadas ESPE.</p>
-                <div class="social">
-                  <a target="_blank" href="mailto:gagomez@espe.edu.ec"><i class="ri-google-fill"></i></a>
-                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100006285943446&locale=es_LA"><i class="ri-facebook-fill"></i></a>
-                  <a target="_blank" href="https://ec.linkedin.com/in/gelacio-g%C3%B3mez-885a36b4"> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/SU.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Dr. Santiago Ulloa Cortazar, Ph.D. </h4>
-                <span>Docente colaborador
-                </span>
-                <p>Dr. Santiago Ulloa Cortazar, Ph.D. Profesor de Fisiología y Estadística en la Universidad de las Fuerzas Armadas ESPE.</p>
-                <div class="social">
-                  <a target="_blank" href="mailto:smulloa@espe.edu.ec"><i class="ri-google-fill"></i></a>
-                  <a target="_blank" href="https://www.facebook.com/samiulloa"><i class="ri-facebook-fill"></i></a>            
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/team/JR.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Ing. Javier Romero Salguero, MSc. </h4>
-                <span>Docente colaborador
-                </span>
-                <p>Ing. Javier Romero Salguero, MSc. Profesor de Agricultura de precisión y Pastos en la Universidad de las Fuerzas Armadas ESPE.</p>
-                <div class="social">
-                  <a target="_blank" href="mailto:ejromero1@espe.edu.ec"><i class="ri-google-fill"></i></a>
-                </div>
-              </div>
+            <div class="social">
+              <a target="_blank" href="mailto:fpcarrera@espe.edu.ec"><i class="ri-google-fill"></i></a>
+              <a target="_blank" href="https://twitter.com/fredypatricioc1?lang=es"><i class="ri-twitter-fill"></i></a>
+              <a target="_blank" href="https://www.facebook.com/fredy.carreragarces"><i class="ri-facebook-fill"></i></a>
+              <a target="_blank" href="https://ec.linkedin.com/in/fredy-carrera-garc%C3%A9s-46096242"> <i class="ri-linkedin-box-fill"></i> </a>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Doctors Section -->
-    <section id="faq" class="faq section-bg">
-      <div class="container" data-aos="fade-up">
-    
-        <div class="section-title">
-          <h2>Preguntas Frecuentes</h2>
+
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/team/GG.png" class="img-fluid" alt=""></div>
+          <div class="member-info">
+
+            <h4 id="equipo-titulo2">Med.Vet. Gelacio Gómez, Mgs.</h4>
+<span id="equipo-subtitulo2">Docente colaborador</span>
+<p id="equipo-descripcion2">Profesor de Sanidad Animal en la Universidad de las Fuerzas Armadas ESPE Sede Santo Domingo.</p>
+
+
+            <div class="social">
+              
+              <a target="_blank" href="mailto:gagomez@espe.edu.ec"><i class="ri-google-fill"></i></a>
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100006285943446&locale=es_LA"><i class="ri-facebook-fill"></i></a>
+              <a target="_blank" href="https://ec.linkedin.com/in/gelacio-g%C3%B3mez-885a36b4"> <i class="ri-linkedin-box-fill"></i> </a>
+            </div>
+          </div>
         </div>
-    
-        <div class="faq-list" >
-          <ul  >
-            <li data-aos="fade-up" id="faq1">
-              <i class="bx bx-help-circle icon-help" ></i> <a data-bs-toggle="collapse" class="collapse" iddata-bs-target="#faq-list-1">¿A qué nos referimos con tecnologías para el mejoramiento genético?
-                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  El mejoramiento genético requiere de tecnologías que nos permitan lograr ventajas que puedan ser aplicadas a la producción. En este caso, se busca mejorar la producción lechera a través de la inseminación artificial (IA), producción in vitro de embriones (PIV) y transferencia de embriones (TE).
-                </p>
-              </div>
-            </li>
-    
-            <li data-aos="fade-up" id="faq2" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">¿Cuál es el objetivo del mejoramiento genético? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  El objetivo general del mejoramiento genético es lograr poblaciones de animales con características genéticas deseadas, especialmente determinadas por el mercado donde se comercializará el producto y el tipo de explotación.</p>
-              </div>
-            </li>
-    
-            <li data-aos="fade-up"  id="faq3" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">¿Qué ventajas tiene usar técnicas de mejoramiento genético en animales? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Las técnicas de mejoramiento genético permiten generar una mayor producción con mejor calidad, reducen la propagación de enfermedades en los animales y, en los últimos años, han permitido aumentar la sostenibilidad y el respeto por el medioambiente.
-                </p>
-              </div>
-            </li>
-    
-            <li data-aos="fade-up" id="faq4" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">¿Qué es la inseminación artificial en bovinos? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  La inseminación artificial consiste en colocar en el útero de las vacas pajuelas con semen seleccionado previamente de una muestra. Es una técnica empleada para lograr el mejoramiento genético de los hatos bovinos, y lo que se persigue es el nacimiento de animales de alta productividad en un corto período de tiempo.               
-                 </p>
-              </div>
-            </li>
-    
-            <li data-aos="fade-up" id="faq5" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">¿Qué es in vitro en bovinos? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  En los bovinos, la técnica está basada en la maduración artificial de ovocitos que generalmente provienen de los ovarios de vacas sacrificadas en mataderos. Posteriormente, estos son fecundados con espermatozoides criopreservados (congelados-descongelados).
-                </p>
-              </div>
-            </li>
-    
-          </ul>
-        </div>
-    
       </div>
-    </section><!-- Fin de la sección de Preguntas Frecuentes -->
+
+      <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/team/SU.png" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4 id="equipo-titulo3">Ing. Santiago Ulloa Cortazar, Ph.D.</h4>
+<p id="equipo-descripcion3">Profesor de Fisiología y Estadística en la Universidad de las Fuerzas Armadas ESPE Sede Santo Domingo.</p>
+
+            <div class="social">
+              <a target="_blank" href="mailto:smulloa@espe.edu.ec"><i class="ri-google-fill"></i></a>
+              <a target="_blank" href="https://www.facebook.com/samiulloa"><i class="ri-facebook-fill"></i></a>            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/team/JR.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+
+            <h4 id="equipo-titulo4">Ing. Javier Romero Salguero, Mgt.</h4>
+<p id="equipo-descripcion4">Profesor de Agricultura de Pastos en la Universidad de las Fuerzas Armadas ESPE Sede Santo Domingo.</p>
+
+
+            <div class="social">
+              <a target="_blank" href="mailto:ejromero1@espe.edu.ec"><i class="ri-google-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 mt-4">
+        <div class="member d-flex align-items-start">
+          <div class="pic"><img src="assets/img/Stalin.jpeg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+
+            <h4 id="equipo-titulo5">Ing. Stalin Granda, Mgt.</h4>
+            <p id="equipo-descripcion5">Profesor de Suelos en la Universidad de las Fuerzas Armadas ESPE Sede Santo Domingo.</p>
+
+            
+            <div class="social">
+              <a target="_blank" href="mailto:ejromero1@espe.edu.ec"><i class="ri-google-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Doctors Section -->
+
+
+
+
+
+<section id="faq" class="faq section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2 id="faq-titulo">Preguntas Frecuentes</h2>
+    </div>
+
+    <div class="faq-list">
+      <ul>
+        <li data-aos="fade-up" id="faq11" >
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+            <span id="faq1"> ¿Cuáles son las biotecnologías reproductivas más utilizadas para el mejoramiento genético?</span>
+            
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+            <p id="faq-respuesta1">
+              Inseminación artificial (IA), producción in vitro de embriones (PIV),
+              Super ovulación y transferencia de embriones (SOTE).
+            </p>
+          </div>
+        </li>
+
+        <li data-aos="fade-up" id="faq21" data-aos-delay="100">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+            <span id="faq2">
+
+              ¿Cuál es el objetivo del mejoramiento genético bovino?
+            </span>
+             <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+            <p id="faq-respuesta2">
+              El objetivo es alcanzar mayor producción en leche y mejores características en carne.
+            </p>
+          </div>
+        </li>
+
+
+
+        <li data-aos="fade-up"  id="faq31" data-aos-delay="400">
+          <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">
+            <span id="faq5"> ¿Qué es la producción</span>
+            <strong class="fst-italic"> in vitro </strong> 
+            <span id="faq6">  de embriones bovinos?</span>
+            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+          <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+            <p id="faq-respuesta5">
+
+
+              Es la generación de un embrión bovino en el laboratorio, a partir de la unión del ovocito y el espermatozoide. Las fases de esta técnica son:
+              Maduración del ovocito, fertilización
+              <strong class="fst-italic">in vitro </strong>
+              (FIV), maduración de los cigotos.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
    
        <!-- ======= Testimonials Section ======= -->
     <section id="testimonials2" class="testimonials2" id="d1">
